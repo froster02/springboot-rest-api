@@ -38,7 +38,7 @@ public class StudentController {
     }
 
     //4. Springboot RESTApi with multiple path variable
-    // {id} - URI template variable
+    // {id}/{firstName}/{lastName} - URI template variable
     // http://localhost:8080/students/1/john/doe
     @GetMapping("students/{id}/{firstName}/{lastName}")
     public Student studentPathVariable(@PathVariable("id") int studentId,
