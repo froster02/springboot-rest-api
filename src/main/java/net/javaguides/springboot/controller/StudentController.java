@@ -14,8 +14,7 @@ public class StudentController {
     //1. http://localhost:8080/student
     @GetMapping("student")
     public Student getSTudent() {
-        Student student = new Student(1, "John", "Doe");
-        return student;
+        return new Student(1, "John", "Doe");
     }
 
     //2. http://localhost:8080/students
